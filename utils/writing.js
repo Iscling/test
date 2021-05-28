@@ -413,3 +413,55 @@ function transCam(str) {
   strArr.forEach((item, index) => {
   })
 }
+
+
+
+function myDebounce(fn, delay = 50) {
+  let timer = null
+  return (...args) => {
+    // if (timer) clearTimeout(timer)
+    // timer = setTimeout(() => {
+    //   fn.apply(...args)
+    // }, delay)
+    // let nowTime = new Date().getTime()
+    // let lastTime = now
+    // if (lastTime > 0)
+  }
+}
+
+//
+// function
+
+//数据类型
+
+1 + '1' = 11
+'1' + 1 =  '11'
+
+// if (true == 0)
+// if ()
+// typeof
+// instanceof
+// toString.call(ddada)
+// [object arr|ob]
+// function
+// typeof
+// function type
+// function myType(type) {
+//   if (type)
+// }
+<a />
+<b />
+// this.$emit()
+// a_index
+// b
+tailNum 3.13.0 ===> 3
+tailTel 13312345672 % 10 ===> 8
+percent ===> (10, 20, 30) / 10 = (1, 2, 3)
+tialArr ===> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+ids = []
+for (let i = tailNum; i < percent + tailNum; i++) {
+  ids.push(tailArr[i])
+}
+if (ids.includes(tailTel)) {
+  hotUpdate()
+}

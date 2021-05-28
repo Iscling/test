@@ -119,13 +119,6 @@ function twoSum(nums, target) {
     // diffs[2] = 0, diffs[7] = 1, diffs[11] = 2, diffs[15] = 3
     diffs[nums[i]] = i
   }
-  for (let i = 0; i < len; i++) {
-    for (let j = i + 1; j < len - 1; j++) {
-      if (arr[i] + arr[j] === target) {
-        return [i, j]
-      }
-    }
-  }
 }
 
 // 合并两数组 输入:
@@ -373,17 +366,29 @@ function dumpArray(arr) {
   return arr1
 }
 
-
-function makeMapCount(nums) {
-  let map = new Map()
-  for (let i = 0; i < nums.length; i++) {
-    let num = nums[i]
-    let count = map.get(num)
-    if (count) {
-      map.set(num, count + 1)
-    } else {
-      map.set(num, 1)
+//给定一个整数n，计算所有小于等于n的非负整数中1的个数
+// 例子：输入13，输出6，数字1出现在以下数字中：1，10，11，12， 13
+function countNum(num) {
+  let arr = [], count = 0
+  for (let i = 0; i <= num; i++) {
+    let newArr = String(i).split('')
+    if (newArr.includes('1')) {
+      arr.push(i)
+    }
+    for (let j = 0; j < newArr.length; j++) {
+      if (newArr[j] == 1) {
+        count += 1
+      }
     }
   }
-  return map
+  let res = `1出现的数字：${arr}，共计${count}次`
+  return res
 }
+countNum(13)
+
+
+41,42
+48,49
+55,56
+63,64
+70,71

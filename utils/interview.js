@@ -1,10 +1,10 @@
 
 new Event('event_name')
 new CustomEvent('event_name', {
-  detail: {
+    detail: {
     // 将需要传递的参数放到这里
-		// 可以在监听的回调函数中获取到：event.detail
-  }
+        // 可以在监听的回调函数中获取到：event.detail
+    }
 })
 let myEvent = document.createEvent('CustomEvent') // 还有个initCustomEvent()
 myEvent.initEvent(
